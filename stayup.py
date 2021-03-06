@@ -1,6 +1,7 @@
 from flask import Flask
 from threading import Thread
 
+#Starting a Flask server on 0.0.0.0:8080
 app = Flask('')
 
 @app.route('/')
