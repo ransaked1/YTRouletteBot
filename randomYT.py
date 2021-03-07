@@ -44,16 +44,16 @@ async def on_message(message):
                 url = "https://random-ize.com/random-youtube"
                 html_text = requests.get(url, headers=headers).text
                 soup = BeautifulSoup(html_text, 'html.parser')
-
-                # Follow the link and parse the clean YT video link
                 url2 = soup.find(id='Container').find('iframe').attrs['src']
+                
+                # Follow the link and parse the clean YT video link
                 html_text = requests.get(url2, headers=headers).text
                 soup = BeautifulSoup(html_text, 'html.parser')
+                yt_url = soup.find('a').attrs['href']
 
                 print(url2) # Debug print
-
-                yt_url = soup.find('a').attrs['href']
                 print(yt_url) #Debug print
+                
                 await message.channel.send(yt_url) # Output link to chat and stop
                 break
             except:
