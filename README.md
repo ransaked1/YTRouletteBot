@@ -1,4 +1,7 @@
 # YTRouletteBot
+
+!!! The bot is currently down due to the service providing the videos blocking the HTML parsing !!!
+
 This is a Discord bot written in Python and hosted on a [repl.it VM](https://replit.com/@ransaked1/YTRouletteBot) that is pinged by [UptimeRobot](https://uptimerobot.com/) in 5min intervals. The bot gives a random YouTube video on request. Check out [this article](https://codenoodles.com/lets-build-an-always-on-discord-bot-with-python/) on my blog to learn how it was built and set up.
 
 ## Setup
